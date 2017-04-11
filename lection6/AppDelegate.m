@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "ViewController1.h"
 #import "ViewController2.h"
+#import "ViewController3.h"
+#import "ViewController4.h"
 
 
 @interface AppDelegate ()
@@ -20,15 +22,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     UIWindow *window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
-                      
+    
+ 
+    
+    
     ViewController1 *firstVC =[ViewController1 new];
-    ViewController2 *secondVC =[ViewController2 new];
-
-    UINavigationController *navigationController =[UINavigationController new];
-    navigationController.viewControllers=@[firstVC];
+    ViewController3 *thirdVC=[ViewController3 new];
+    ViewController4 *forthVC =[ViewController4 new];
     
+    UINavigationController *nc1=[UINavigationController new];
+    nc1.viewControllers=@[firstVC];
     
-    window.rootViewController=navigationController;
+    UINavigationController *nc2=[UINavigationController new];
+    nc2.viewControllers=@[forthVC];
+    
+    UITabBarController *tabbarC=[[UITabBarController alloc]init];
+    tabbarC.viewControllers=@[thirdVC,nc1,nc2];
+    nc1.tabBarItem.title=@"second";
+       nc2.tabBarItem.title=@"third";
+    
+    window.rootViewController=tabbarC;
     
     
     self.window=window;

@@ -17,7 +17,7 @@
 -(instancetype)init{
     self=[super init];
     if(self){
-        self.navigationItem.title=@"second";
+        self.tabBarItem.title=@"second";
     }
     return self;
     
@@ -36,9 +36,12 @@
     [btn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:btn];
+    
+
 }
 
 -(void)buttonClick:(UIButton*)button{
+
     [self.navigationController popViewControllerAnimated:YES];
     
     
