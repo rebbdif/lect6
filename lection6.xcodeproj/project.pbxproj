@@ -13,11 +13,11 @@
 		0446D9D21E9D35750002776D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0446D9D01E9D35750002776D /* Main.storyboard */; };
 		0446D9D41E9D35750002776D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0446D9D31E9D35750002776D /* Assets.xcassets */; };
 		0446D9D71E9D35750002776D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0446D9D51E9D35750002776D /* LaunchScreen.storyboard */; };
-		0446D9E01E9D394A0002776D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446D9DF1E9D394A0002776D /* TableViewController.m */; };
 		0446D9E31E9D3A120002776D /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446D9E21E9D3A120002776D /* ViewController2.m */; };
 		0446D9E61E9D477A0002776D /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446D9E51E9D477A0002776D /* ViewController3.m */; };
 		0446D9E91E9D4AB00002776D /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446D9E81E9D4AB00002776D /* ViewController4.m */; };
 		0446D9EC1E9D4B810002776D /* ViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446D9EB1E9D4B810002776D /* ViewController5.m */; };
+		0446D9EF1E9D5AEC0002776D /* TableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446D9EE1E9D5AEC0002776D /* TableVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +31,6 @@
 		0446D9D31E9D35750002776D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0446D9D61E9D35750002776D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0446D9D81E9D35750002776D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0446D9DE1E9D394A0002776D /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		0446D9DF1E9D394A0002776D /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		0446D9E11E9D3A120002776D /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		0446D9E21E9D3A120002776D /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		0446D9E41E9D477A0002776D /* ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
@@ -41,6 +39,8 @@
 		0446D9E81E9D4AB00002776D /* ViewController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
 		0446D9EA1E9D4B810002776D /* ViewController5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController5.h; sourceTree = "<group>"; };
 		0446D9EB1E9D4B810002776D /* ViewController5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController5.m; sourceTree = "<group>"; };
+		0446D9ED1E9D5AEC0002776D /* TableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableVC.h; path = ../TableVC.h; sourceTree = "<group>"; };
+		0446D9EE1E9D5AEC0002776D /* TableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableVC.m; path = ../TableVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +85,8 @@
 				0446D9EB1E9D4B810002776D /* ViewController5.m */,
 				0446D9E11E9D3A120002776D /* ViewController2.h */,
 				0446D9E21E9D3A120002776D /* ViewController2.m */,
-				0446D9DE1E9D394A0002776D /* TableViewController.h */,
-				0446D9DF1E9D394A0002776D /* TableViewController.m */,
+				0446D9ED1E9D5AEC0002776D /* TableVC.h */,
+				0446D9EE1E9D5AEC0002776D /* TableVC.m */,
 				0446D9D01E9D35750002776D /* Main.storyboard */,
 				0446D9D31E9D35750002776D /* Assets.xcassets */,
 				0446D9D51E9D35750002776D /* LaunchScreen.storyboard */,
@@ -180,9 +180,9 @@
 				0446D9CC1E9D35750002776D /* AppDelegate.m in Sources */,
 				0446D9E61E9D477A0002776D /* ViewController3.m in Sources */,
 				0446D9E31E9D3A120002776D /* ViewController2.m in Sources */,
+				0446D9EF1E9D5AEC0002776D /* TableVC.m in Sources */,
 				0446D9C91E9D35750002776D /* main.m in Sources */,
 				0446D9E91E9D4AB00002776D /* ViewController4.m in Sources */,
-				0446D9E01E9D394A0002776D /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

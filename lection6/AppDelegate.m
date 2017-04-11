@@ -11,7 +11,7 @@
 #import "ViewController2.h"
 #import "ViewController3.h"
 #import "ViewController4.h"
-
+#import "TableVC.h"
 
 @interface AppDelegate ()
 
@@ -23,27 +23,32 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     UIWindow *window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     
- 
     
     
-    ViewController1 *firstVC =[ViewController1 new];
-    ViewController3 *thirdVC=[ViewController3 new];
-    ViewController4 *forthVC =[ViewController4 new];
+    /*
+     ViewController1 *firstVC =[ViewController1 new];
+     ViewController3 *thirdVC=[ViewController3 new];
+     ViewController4 *forthVC =[ViewController4 new];
+     
+     UINavigationController *nc1=[UINavigationController new];
+     nc1.viewControllers=@[firstVC];
+     
+     UINavigationController *nc2=[UINavigationController new];
+     nc2.viewControllers=@[forthVC];
+     
+     UITabBarController *tabbarC=[[UITabBarController alloc]init];
+     tabbarC.viewControllers=@[thirdVC,nc1,nc2];
+     nc1.tabBarItem.title=@"second";
+     nc2.tabBarItem.title=@"third";
+     
+     window.rootViewController=tabbarC;
+     */
     
-    UINavigationController *nc1=[UINavigationController new];
-    nc1.viewControllers=@[firstVC];
+    TableVC *tvc=[TableVC new];
+    UINavigationController *nc=[[UINavigationController alloc]init];
+    nc.viewControllers=@[tvc];
     
-    UINavigationController *nc2=[UINavigationController new];
-    nc2.viewControllers=@[forthVC];
-    
-    UITabBarController *tabbarC=[[UITabBarController alloc]init];
-    tabbarC.viewControllers=@[thirdVC,nc1,nc2];
-    nc1.tabBarItem.title=@"second";
-       nc2.tabBarItem.title=@"third";
-    
-    window.rootViewController=tabbarC;
-    
-    
+    window.rootViewController=nc;
     self.window=window;
     [window makeKeyAndVisible];
     
