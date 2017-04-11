@@ -23,17 +23,13 @@
                       
     ViewController1 *firstVC =[ViewController1 new];
     ViewController2 *secondVC =[ViewController2 new];
+
+    UINavigationController *navigationController =[UINavigationController new];
+    navigationController.viewControllers=@[firstVC];
     
-    NSArray *viewControllers=@[firstVC,secondVC];
     
-    UITabBarController *tabBarController=[UITabBarController new];
-   [ tabBarController setViewControllers:@[firstVC,secondVC]];
+    window.rootViewController=navigationController;
     
-    UISplitViewController *splitVC=[UISplitViewController new];
-    splitVC.viewControllers=viewControllers;
-    
-   // window.rootViewController=tabBarController;
-    window.rootViewController=splitVC;
     
     self.window=window;
     [window makeKeyAndVisible];
